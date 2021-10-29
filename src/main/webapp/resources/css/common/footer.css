@@ -1,0 +1,36 @@
+
+/* FOOTER */
+footer {
+  padding-bottom: 40px;
+}
+footer nav {
+  background-color: #222;
+  height: 50px;
+  margin-bottom: 30px;
+}
+footer .menu {
+  display: flex;
+  margin-bottom: 50px;
+}
+footer .menu li {
+  position: relative;
+}
+footer .menu li a {
+  display: block;
+  line-height: 50px;
+  height: 100%;
+  color: #fff;
+  padding-right: 30px;
+}
+footer .menu li:not(:first-child) a::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  top: 18px;
+  left: -15px;
+}
+footer .info {
+
+}

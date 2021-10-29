@@ -1,147 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인천시 안전체험관</title>
-
-  <!-- 오픈 그래프 -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="${pageContext.request.contextPath}/resources/images/starbucks_seo.jpg" />
-  <meta property="og:url" content="https://starbucks.co.kr" />
-
-  <!-- 트위터 카드 -->
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="${pageContext.request.contextPath}/resources/images/starbucks_seo.jpg" />
-  <meta property="twitter:url" content="https://starbucks.co.kr" />
-
-  <!-- link -->
-  <link rel="icon" href="${pageContext.request.contextPath}/resources/images/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
-
-  <!-- script -->
-  <!-- JQuery -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- SWIPER -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- common head.jsp (CDN) -->
+	<jsp:include page="${pageContext.request.contextPath}/WEB-INF/jsp/common/head.jsp" />
+	
+	<!-- common.css -->
+  <link rel="stylesheet" href="<c:url value='${pageContext.request.contextPath}/resources/css/common/common.css' /> ">
+	<!-- common header -->
+  <link rel="stylesheet" href="<c:url value='${pageContext.request.contextPath}/resources/css/common/header.css' /> ">
+	<!-- common footer -->
+  <link rel="stylesheet" href="<c:url value='${pageContext.request.contextPath}/resources/css/common/footer.css' /> ">
+	<!-- main content -->
+  <link rel="stylesheet" href="<c:url value='${pageContext.request.contextPath}/resources/css/main/content.css' /> ">
   
-  <!-- main.js -->
-  <script defer src="${pageContext.request.contextPath}/resources/js/main.js"></script>
-  
-  
-
+  <!-- common topMenu.js -->
+  <script defer src="<c:url value='${pageContext.request.contextPath}/resources/js/common/topMenu.js' /> "></script>
+  <!-- main content.js -->
+  <script defer src="<c:url value='${pageContext.request.contextPath}/resources/js/main/content.js' /> "></script>
 </head>
+
 <body>
 
   <!-- HEADER -->
   <header>
-    
-    <!-- login-menu -->
-    <div class="login-menu">
-      <div class="inner">
-        <ul class="menu">
-          <li><a href="">로그인</a></li>
-          <li><a href="">회원가입</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- main-menu -->
-    <div class="inner">
-
-      <h1 class="header__logo">
-        <a href="/">
-          <img src="${pageContext.request.contextPath}/resources/images/main_logo.png" alt="무제">
-        </a>
-      </h1>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="#none">체험관소개</a>
-            <div class="main-menu__sub">
-              <ul>
-                <li>
-                  <a href="#none">소개</a>
-                </li>
-                <li>
-                  <a href="#none">시설현황</a>
-                </li>
-                <li>
-                  <a href="#none">오시는길</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#none">이용안내</a>
-            <div class="main-menu__sub">
-              <ul>
-                <li>
-                  <a href="#none">체험관 예약</a>
-                </li>
-                <li>
-                  <a href="#none">대강당 예약</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#none">예약/체험수료증</a>
-            <div class="main-menu__sub">
-              <ul>
-                <li>
-                  <a href="#none">예약</a>
-                </li>
-                <li>
-                  <a href="#none">조회/취소/변경</a>
-                </li>
-                <li>
-                  <a href="#none">체험수료증</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#none">소통광장</a>
-            <div class="main-menu__sub">
-              <ul>
-                <li>
-                  <a href="#none">공지사항</a>
-                </li>
-                <li>
-                  <a href="#none">묻고답하기(Q&A)</a>
-                </li>
-                <li>
-                  <a href="#none">행정자료실</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      
-      <div class="main-menu-bg">
-      </div>
-
-    </div>
-
+     <!-- common topMenu.jsp -->
+  	<jsp:include page="${pageContext.request.contextPath}/WEB-INF/jsp/common/topMenu.jsp" />
   </header>
 
 
@@ -177,6 +63,7 @@
 
       <h4>공공서비스 <span>안내</span></h4>
       <div class="main_guide__wrap">
+      	<!-- 공지  -->
         <div class="box notice">
           <h5>공지사항</h5>
           <ul>
@@ -194,6 +81,7 @@
             </li>
           </ul>
         </div>
+        <!-- 예약 -->
         <div class="box reservation">
           <a href="#none">
             <h3>예약내역</h3>
@@ -203,6 +91,7 @@
             </p>
           </a>
         </div>
+        <!-- 이용안내  -->
         <div class="box guidance">
           <a href="#none">
             <h3>이용안내</h3>
@@ -214,27 +103,29 @@
         </div>
       </div>
 
+			<!-- swiper 이미지 목록  -->
       <div class="promotion">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="${pageContext.request.contextPath}/resources/images/promotion_slide1.jpg"/>
+              <img src="<c:url value='${pageContext.request.contextPath}/resources/images/promotion_slide1.jpg'/> "/>
             </div>
             <div class="swiper-slide">
-              <img src="${pageContext.request.contextPath}/resources/images/promotion_slide2.jpg"/>
+              <img src="<c:url value='${pageContext.request.contextPath}/resources/images/promotion_slide2.jpg'/> "/>
             </div>
             <div class="swiper-slide">
-              <img src="${pageContext.request.contextPath}/resources/images/promotion_slide3.jpg" />
+              <img src="<c:url value='${pageContext.request.contextPath}/resources/images/promotion_slide3.jpg'/> "/>
             </div>
             <div class="swiper-slide">
-              <img src="${pageContext.request.contextPath}/resources/images/promotion_slide4.jpg"/>
+              <img src="<c:url value='${pageContext.request.contextPath}/resources/images/promotion_slide4.jpg'/> "/>
             </div>
             <div class="swiper-slide">
-              <img src="${pageContext.request.contextPath}/resources/images/promotion_slide5.jpg"/>
+              <img src="<c:url value='${pageContext.request.contextPath}/resources/images/promotion_slide5.jpg'/> "/>
             </div>
           </div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
+        
+        <!-- swiper next, prev 버튼  -->
         <a href="javascript:void(0)" class="swiper-button-next2">
           <span class="material-icons">
             arrow_forward_ios
@@ -250,23 +141,11 @@
     </div>
   </div>
 
+
   <!-- FOOTER -->
   <footer>
-    <nav>
-      <div class="inner">
-        <ul class="menu">
-          <li><a href="#none">개인정보처리방침</a></li>
-          <li><a href="#none">사이트맵</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="info">
-      <div class="inner">
-        <span>인천광역시 부평구 굴포로</span>
-        <span>TEL : 02) 3015_1100 / FAX : 02) 3015-1106</span>
-      </div>
-    </div>
+ 		<!-- common footer.jsp -->
+  	<jsp:include page="${pageContext.request.contextPath}/WEB-INF/jsp/common/footer.jsp"/>
   </footer>
 
 </body>

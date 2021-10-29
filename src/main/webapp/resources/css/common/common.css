@@ -1,0 +1,53 @@
+
+/* COOMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+}
+img {
+  display: block;
+}
+a {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+input, button {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+  border: 0 solid black;
+}
+button {
+  cursor: pointer;
+}
+input:focus {
+  outline:none;
+}
+div {
+  box-sizing: border-box;
+}
+span {
+}
+p {
+	line-height: 1.7em;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.material-icons {
+  vertical-align: bottom;
+}
+]

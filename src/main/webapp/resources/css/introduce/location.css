@@ -1,0 +1,22 @@
+
+/* CONTENT */
+.content {
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+.content .inner {
+	padding: 65px;
+}
+.content .inner > h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 1px solid #778899;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.content .map .map-info {
+	padding: 15px;
+	text-align: center;
+	background-color: #f7f7f7;
+}
